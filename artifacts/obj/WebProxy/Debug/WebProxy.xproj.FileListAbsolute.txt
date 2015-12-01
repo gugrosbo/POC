@@ -1,0 +1,1 @@
+C:\enlistment\POC\artifacts\obj\WebProxy\Debug\WebProxy.xprojResolveAssemblyReference.cache

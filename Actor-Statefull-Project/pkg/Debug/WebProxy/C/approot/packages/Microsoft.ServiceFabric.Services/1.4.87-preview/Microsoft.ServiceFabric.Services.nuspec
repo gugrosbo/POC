@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.ServiceFabric.Services</id>
+    <version>1.4.87-preview</version>
+    <title>Microsoft.ServiceFabric.Services</title>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <authors>Microsoft</authors>
+    <owners>Microsoft,ServiceFabric</owners>
+    <licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</licenseUrl>
+    <projectUrl>http://aka.ms/servicefabric</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288890</iconUrl>
+    <description>This package contains the common Service Framework APIs for building and connecting to reliable services on Microsoft Service Fabric.</description>
+    <summary>This package contains the common Service Framework APIs for building and connecting to reliable services on Microsoft Service Fabric.</summary>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <language>en-US</language>
+    <tags>ServiceFabric Microsoft Azure Fabric;</tags>
+    <dependencies>
+      <dependency id="Microsoft.ServiceFabric" version="[4.4.87-preview]" />
+      <dependency id="Microsoft.ServiceFabric.Data" version="[1.4.87-preview]" />
+    </dependencies>
+    <references>
+      <reference file="Microsoft.ServiceFabric.Services.dll" />
+    </references>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ServiceModel" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

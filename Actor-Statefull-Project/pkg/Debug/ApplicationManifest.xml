@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="Actor_Statefull_ProjectType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+   <Parameters>
+      <Parameter Name="HostActorService_PartitionCount" DefaultValue="10" />
+      <Parameter Name="HostActorService_MinReplicaSetSize" DefaultValue="2" />
+      <Parameter Name="HostActorService_TargetReplicaSetSize" DefaultValue="3" />
+   </Parameters>
+   <ServiceManifestImport>
+      <ServiceManifestRef ServiceManifestName="WebProxy" ServiceManifestVersion="1.0.0" />
+   </ServiceManifestImport>
+   <ServiceManifestImport>
+      <ServiceManifestRef ServiceManifestName="HostActorPkg" ServiceManifestVersion="1.0.0" />
+   </ServiceManifestImport>
+   <DefaultServices>
+      <Service Name="WebProxyService">
+         <StatelessService ServiceTypeName="WebProxyType">
+            <SingletonPartition />
+         </StatelessService>
+      </Service>
+      <Service Name="HostActorService" GeneratedIdRef="bf073c35-746b-485e-a1d1-39112333b658">
+         <StatefulService ServiceTypeName="HostActorServiceType" TargetReplicaSetSize="[HostActorService_TargetReplicaSetSize]" MinReplicaSetSize="[HostActorService_MinReplicaSetSize]">
+            <UniformInt64Partition PartitionCount="[HostActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+         </StatefulService>
+      </Service>
+   </DefaultServices>
+</ApplicationManifest>

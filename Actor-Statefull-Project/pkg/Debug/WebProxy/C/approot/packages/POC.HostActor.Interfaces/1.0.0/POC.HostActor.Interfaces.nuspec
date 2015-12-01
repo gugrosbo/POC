@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>POC.HostActor.Interfaces</id>
+    <version>1.0.0</version>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <authors>POC.HostActor.Interfaces</authors>
+    <owners>POC.HostActor.Interfaces</owners>
+    <description>POC.HostActor.Interfaces</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="Microsoft.ServiceFabric" version="4.4.87-preview" />
+        <dependency id="Microsoft.ServiceFabric.Actors" version="1.4.87-preview" />
+        <dependency id="Microsoft.ServiceFabric.Data" version="1.4.87-preview" />
+        <dependency id="Microsoft.ServiceFabric.Services" version="1.4.87-preview" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.5.1" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5.1" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5.1" />
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5.1" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

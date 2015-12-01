@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.ServiceFabric.AspNet.Hosting</id>
+    <version>1.0.0-rc1</version>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <authors>Microsoft</authors>
+    <owners>Microsoft,ServiceFabric</owners>
+    <licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</licenseUrl>
+    <projectUrl>http://aka.ms/servicefabric</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288890</iconUrl>
+    <description>This package contains the assemblies needed to use ASP.NET 5 with your Service Fabric services. Specifically it will allow you to run your service on the .NET Execution Environment (DNX).</description>
+    <summary>This package contains the assemblies required to build use ASP.NET 5 with your Service Fabric services</summary>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <language>en-US</language>
+    <tags>ServiceFabric Microsoft Azure Fabric</tags>
+    <dependencies>
+      <group targetFramework="DNX4.5.1">
+        <dependency id="Microsoft.AspNet.Hosting" version="1.0.0-rc1-final" />
+        <dependency id="Microsoft.AspNet.Server.WebListener" version="1.0.0-rc1-final" />
+        <dependency id="Microsoft.ServiceFabric.Services" version="1.4.57-preview" />
+        <dependency id="Microsoft.ServiceFabric" version="4.4.57-preview" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework="DNX4.5.1" />
+      <frameworkAssembly assemblyName="System" targetFramework="DNX4.5.1" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="DNX4.5.1" />
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework="DNX4.5.1" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
