@@ -35,14 +35,14 @@ namespace Microsoft.OMS.MobyDockMgmt.MobyDockMgmtService
             return await  this.actor.GetContainersByHost(hostName);
         }
 
-        public async Task<Container> GetContainerByName(string name)
+        public async Task<Container> GetContainerByName(string hostId, string name)
         {
-            return await this.actor.GetContainerByName(name);
+            return await this.actor.GetContainerByName(hostId, name);
         }
 
-        public async Task<Container> GetContainerById(string id)
+        public async Task<Container> GetContainerById(string hostId, string id)
         {
-            return await this.actor.GetContainerById(id);
+            return await this.actor.GetContainerById(hostId, id);
         }
 
         [HttpGet]
@@ -66,16 +66,16 @@ namespace Microsoft.OMS.MobyDockMgmt.MobyDockMgmtService
             Debug.Assert(!string.IsNullOrEmpty(id));
             Debug.WriteLine("stopping container id " + id);
 
-            return await (actor.StopContainer(id);
+            return await actor.StopContainer(id);
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteContainer(string id)
+        public async Task<IActionResult> DeleteContainer(string hostId, string id)
         {
             Debug.Assert(!string.IsNullOrEmpty(id));
             Debug.WriteLine("deleting container id " + id);
 
-            await this.actor.DeleteContainerById(id);
+            await this.actor.DeleteContainerById(hostId, id);
             return Ok();
         }
 
