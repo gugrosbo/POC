@@ -1,0 +1,42 @@
+﻿/*#resultForm .fieldsetWrapper.active {
+    width: 80%;
+}*/
+#resultForm li>.checkbox {
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#resultForm h2, #resultForm h3{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family: "Segoe UI";
+    color: #404040;
+}
+#resultForm h2:hover, #resultForm h3:hover {
+    cursor: pointer;
+}
+#resultForm ul{
+    margin-left: 30px;}
+#resultForm>ul {
+    height: 400px;
+}
+#resultForm table {
+    margin: 10px 0px;
+    margin-left: -10px;
+}
+#resultForm .fieldsetBookmark.Passed {
+    background-color: forestgreen;
+} 
+#resultForm .fieldsetBookmark.Failed {
+    background-color: lightcoral;
+} 
+#resultForm .fieldsetBookmark.InProgress {
+    background-color: orange;
+} 
+#resultForm .fieldsetBookmark.All {
+    background-color: grey;
+}
+#resultForm .fieldsetBookmark.Queued {
+    background-color: cornflowerblue;
+}

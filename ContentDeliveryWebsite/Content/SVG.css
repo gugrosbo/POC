@@ -1,0 +1,80 @@
+﻿.msportalfx-svg-placeholder{
+    border-collapse: separate;
+    color: rgb(45, 50, 57);
+    display: inline;
+    font-family: wf_segoe-ui_semibold, 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: 21px;
+    line-height: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transform-origin: 10.5px 10.5px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 21px;
+}
+
+.msportalfx-gridcolumn-assetsvg-icon {
+    border-collapse: separate;
+    color: rgb(45, 50, 57);
+    display: inline;
+    font-family: wf_segoe-ui_semibold, 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: 21px;
+    line-height: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transform-origin: 10.5px 10.5px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 21px;
+}
+
+.msportalfx-svg-c15 {
+    border-collapse: separate;
+    color: rgb(45, 50, 57);
+    display: inline;
+    fill: rgb(89, 180, 217);
+    font-family: wf_segoe-ui_semibold, 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    line-height: normal;
+    transform-origin: 0px 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.msportalfx-svg-c01{
+    border-collapse: separate;
+    color: rgb(45, 50, 57);
+    display: inline;
+    fill: rgb(255, 255, 255);
+    font-family: wf_segoe-ui_semibold, 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    line-height: normal;
+    transform-origin: 0px 0px;
+    white-space: nowrap;
+    width: auto;
+
+}
+
+.msportalfx-svg-c19{
+    border-collapse: separate;
+    color: rgb(45, 50, 57);
+    display: inline;
+    fill: rgb(0, 114, 198);
+    font-family: wf_segoe-ui_semibold, 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    line-height: normal;
+    transform-origin: 0px 0px;
+    white-space: nowrap;
+    width: auto;
+
+}

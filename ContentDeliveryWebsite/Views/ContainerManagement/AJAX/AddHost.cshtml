@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+} 
+
+<form action="" method="PUT" class="ajaxForm">
+    <fieldset>
+        <legend>Adding a docker host</legend>
+        <dl>
+            <dt>
+                <label for="addHostName">Name</label>
+            </dt>
+            <dd>
+                <input cols="50" rows="4" type="text" name="Name" id="addHostName"/>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <label for="addHostPort">Port</label>
+            </dt>
+            <dd>
+                <input cols="50" row="4" type="text" name="Port" id="addHostPort"/>
+            </dd>
+        </dl>
+        <div class="submitBox">
+            <input type="submit" name="subit" value="Create"/>
+            <input type="button" class="cancel" value="Cancel"/>
+        </div>
+    </fieldset>
+</form>

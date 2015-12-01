@@ -1,0 +1,96 @@
+﻿.MobyFormTab {
+    overflow-x: hidden;
+}
+
+    .MobyFormTab .fieldsetWrapper {
+        float: left;
+        padding-left: 51px;
+        overflow: hidden;
+        background-color: #e9e9e9;
+        -moz-transition: width linear 400ms;
+        -webkit-transition: width linear 400ms;
+        -o-transition: width linear 400ms;
+        transition: width linear 400ms;
+    }
+
+        .MobyFormTab .fieldsetWrapper:last-of-type {
+            padding-left: 50px;
+        }
+
+        .MobyFormTab .fieldsetWrapper:not(.active) {
+            width: 0px;
+        }
+
+        .MobyFormTab .fieldsetWrapper > .fieldsetBookmark {
+            position: absolute;
+            left: 0px;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            background-color: #41a5c6;
+            z-index: 3;
+            cursor: pointer;
+            -moz-transition: width linear 400ms;
+            -webkit-transition: width linear 400ms;
+            -o-transition: width linear 400ms;
+            transition: width linear 400ms;
+        }
+
+
+        .MobyFormTab .fieldsetWrapper.active > .fieldsetBookmark {
+            width: 24px;
+        }
+
+            .MobyFormTab .fieldsetWrapper.active > .fieldsetBookmark > div:first-child {
+                opacity: 0;
+            }
+
+    .MobyFormTab .fieldsetBookmark > div:first-child {
+        font-size: 1.2em;
+        position: absolute;
+        top: 5px;
+        right: 8px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        -webkit-transform-origin: bottom right;
+        -moz-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+        -o-transform-origin: bottom right;
+        transform-origin: bottom right;
+        white-space: nowrap;
+        text-align: right;
+        color: white;
+        font-weight: bold;
+        opacity: 1;
+        -moz-transition: opacity linear 400ms;
+        -webkit-transition: opacity linear 400ms;
+        -o-transition: opacity linear 400ms;
+        transition: opacity linear 400ms;
+    }
+
+    .MobyFormTab .fieldsetBookmark > div:last-child {
+        background-color: white;
+        text-align: center;
+        padding: 2px;
+        border-radius: 8px;
+        width: 13px;
+        height: 13px;
+        margin: auto;
+        font-size: 0.8em;
+        position: absolute;
+        bottom: 10px;
+        left: 3px;
+        border-left: white solid 1px;
+    }
+
+
+    .MobyFormTab .fieldsetWrapper.containsIncorrectFields > .fieldsetBookmark > div {
+        color: thistle;
+    }
+
+    .MobyFormTab fieldset {
+        overflow-y: scroll;
+    }

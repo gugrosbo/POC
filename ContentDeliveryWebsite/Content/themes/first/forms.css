@@ -1,0 +1,327 @@
+﻿
+
+/**********************************************/
+/*                    FORMS                   */
+/**********************************************/
+
+form.ajaxForm
+{
+    padding: 9px 9px 9px 9px;
+}
+
+
+form>fieldset, form>div>fieldset
+{    
+    border:none;
+    margin-right: 15px;
+    min-width: 770px;
+    padding-bottom: 65px;
+    display: block;
+}
+
+  
+.fieldsetWrapper {
+    float: left;
+    padding-left: 55px;
+    overflow: hidden;
+}
+.fieldsetWrapper:not(.active) {
+    width: 0px;
+}
+.fieldsetWrapper .fieldsetBookmark {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 24px;
+    height: 100%;
+    background-color: #41a5c6;
+    z-index: 3;
+    cursor: pointer;
+}
+ 
+.fieldsetWrapper:not(.active) .fieldsetBookmark {
+    width: 50px;
+}
+.fieldsetWrapper.active .fieldsetBookmark > div:first-child{ display: none;}
+ .fieldsetBookmark > div:first-child
+    {
+        font-size: 1.2em;
+        position: absolute;
+        top: 5px;
+        right: 8px;
+       -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: bottom right ;
+  -moz-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  -o-transform-origin: bottom right;
+  transform-origin: bottom right;
+        white-space: nowrap;
+        text-align: right;
+
+        color: white;
+        font-weight: bold;
+
+    }
+.fieldsetBookmark>div:last-child {
+    background-color: white;
+    text-align: center;
+    padding: 2px;
+    border-radius: 8px;
+    width: 13px;
+    height: 13px;
+    margin: auto;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 10px;left: 3px;
+    border-left: white solid 1px;
+}
+legend
+{
+    font-family: "Segoe UI light";
+    font-size:2em;
+    background-color:transparent;
+    border-bottom: solid 3px #41a5c6;
+    padding:10px;
+    text-transform:lowercase;
+    width: 750px;
+    margin-bottom: 10px;
+}
+form dl
+{
+    clear: both;
+    padding:  20px;
+    border-bottom: solid 1px #AAAAAA;
+    background-color: white;
+    overflow: visible;
+}
+form dl:last-of-type
+{
+    border:none;
+    
+}
+
+    form dl:hover
+    {
+        background-color: #d3ecf8;
+    }
+    form dl.disabled {
+        background-color: #909090;
+        color: #303030;
+    }
+    form dl.disabled input, form dl.disabled select {
+        background-color: lightgray;
+        border: black solid 1px;
+    }
+form dl dt
+{
+    float: left;
+    width: 40%;
+    text-transform:uppercase;
+    z-index: 1
+}
+
+dl.or:not(.default) {
+    display:none
+}
+
+dl>div.orIcon {
+    position: absolute;
+    top: -18px;
+    padding: 5px;
+    left: 55px;
+    background-color: white;
+    border: solid 2px #909090;
+    z-index:10
+}
+dl>div.orHideBorder {
+     position: absolute;
+    top: -17px;
+    left: 0;
+    background-color: white;
+    z-index: 10;
+    width: 55px;
+    height: 33px;
+}
+form dl dd
+{
+    margin-left:42%;
+}
+
+form dl dd ul
+{
+    list-style: none outside none;
+}
+form dl dd label:hover
+{
+    color:#41a5c6;
+}
+    form dl dd table
+    {
+        border-collapse:collapse;
+        width:80%;
+        background-color:white;
+
+    }
+     form dl dd table td {
+         text-align: left;
+     }
+  form >fieldset>table {
+      margin-left: 15px;
+      margin-bottom: 10px;
+  } 
+form >fieldset>table:before {
+    content: "";
+    display: block;
+    height: 20px;
+}
+form .tip
+{
+    font-style: italic;
+}
+form input.path[type=text] {
+    width: 90%;
+}
+form input[type=submit],form input[type=button]
+{
+    padding: 6px 10px 4px 10px;
+    border: solid 2px black;
+    background-color: white;
+    color:black;
+    font-family: "Segoe UI";
+    font-size:1.0em;
+    font-weight:600;
+}
+    form input[type=submit]:hover, form input[type=button]:hover
+    {
+        background-color: #DDDDDD;
+    }
+form input[type=radio]
+{
+    display: none;
+}
+form dd > label
+{
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin :0 10px 0 10px;
+    border: solid 2px #CCCCCC;
+}
+
+    form dd > label.selectedRadio
+    {
+        background-color:#DDDDDD;
+        border-color: #404040;
+    }
+
+form input[type=checkbox]
+{
+    margin: 3px;
+}
+
+form select, form input[type=text] {
+    padding: 7px 15px;
+}
+
+form .submitBox
+{
+    width:100%;
+    text-align:right;
+    margin-top:5px;
+    position: absolute;
+    bottom: 25px;right: 10px;
+}
+
+form .checkbox {
+    display: block;
+    /*margin: auto;*/
+    width: 12px;
+    height:12px;
+    border: solid 1px #303030;
+    
+}
+form .checkbox:hover {
+    cursor: pointer;
+}
+form .checkbox.checked>div {
+    /*see sprites*/
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+form .checkbox.partial>div {
+    height: 8px;
+    width: 8px;
+    background-color: #8ec92c;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+#threeStateCheckBoxChoice {
+    display: none;
+}
+
+
+/* todo */
+/* define height and width of scrollable area. Add 16px to width for scrollbar          */
+div.tableContainer {
+	clear: both;
+	height: 480px;
+	overflow: auto;
+	width: 756px
+}
+
+/* Reset overflow value to hidden for all non-IE browsers. */
+html>body div.tableContainer {
+	overflow: hidden;
+	width: 776px
+}
+
+/* define width of table. IE browsers only                 */
+div.tableContainer table {
+	float: left;
+	width: 760px
+}
+
+/* define width of table. Add 16px to width for scrollbar.           */
+/* All other non-IE browsers.                                        */
+html>body div.tableContainer table {
+	width: 776px
+}
+
+/* set table header to a fixed position. WinIE 6.x only                                       */
+/* In WinIE 6.x, any element with a position property set to relative and is a child of       */
+/* an element that has an overflow property set, the relative value translates into fixed.    */
+/* Ex: parent element DIV with a class of tableContainer has an overflow property set to auto */
+thead.fixedHeader tr {
+    position: relative;
+}
+
+/* set THEAD element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+html>body thead.fixedHeader tr {
+	display: block
+}
+
+/* define the table content to be scrollable                                              */
+/* set TBODY element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+/* induced side effect is that child TDs no longer accept width: auto                     */
+html>body tbody.scrollContent {
+	display: block;
+	height: 480px;
+	overflow: auto;
+	width: 100%
+}
+
+
+
+

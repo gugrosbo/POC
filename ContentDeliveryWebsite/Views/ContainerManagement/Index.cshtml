@@ -1,0 +1,48 @@
+﻿
+
+
+@{
+    ViewBag.Title = "MobyDock";
+}
+
+@section MenuItems{
+    <li>@Html.ActionLink("New", "CreateRunFormRequest", new { Controller = "Run" }, new { @class = "ajaxFormLink" })</li>
+    <li><a href="" id="viewResultsButton">View results</a></li>
+
+}
+
+
+Welcome to MobyDock
+
+
+@using (Html.BeginForm("GetPreparationDetails", "DatedTask", FormMethod.Post, new { @id = "datedTasks" }))
+{
+
+    <fieldset>
+        <legend> Docker hosts </legend>
+
+        <table id="hostList" class="MobyTable">
+            <thead>
+            <tr><th rel="hostName"> Host name</th></tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend> Containers </legend>
+
+        <table id="hostList" class="MobyTable">
+            <tr><th> Host name</th></tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend> Links </legend>
+
+        <table id="hostList" class="MobyTable">
+            <tr><th> Host name</th></tr>
+            <tr> <td> @Html.Partial("SVG/VirtualMachine") host 1 </td></tr>
+        </table>
+    </fieldset>
+}

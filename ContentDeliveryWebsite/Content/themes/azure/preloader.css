@@ -1,0 +1,14 @@
+﻿.loaderAnim {
+    background: url(./images/spinner-md.gif) no-repeat transparent;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    z-index: 1000;
+}
+.ajaxPreloaderSmall {
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}

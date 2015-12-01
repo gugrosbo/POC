@@ -1,0 +1,98 @@
+﻿/**********************************************/
+/*                    COMMON                  */
+/**********************************************/
+
+*
+{
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+    *.clear
+    {
+        clear: both;
+    }
+
+html
+{
+    height: 100%;
+    background: #CCCCCC;
+}
+
+
+body
+{
+    margin: 0;
+    height: 100%;
+}
+
+div
+{
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    margin: 0;
+    font-weight: lighter;
+}
+
+ul.reset
+{
+    list-style: none outside none;
+}
+
+.clearAfter:after
+{
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.noTextDisplay *{
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 98%
+}
+
+table td,table th
+    {
+        padding:3px 9px;
+        text-align: center;
+    }
+        table th
+        {
+            border-bottom: solid 2px #949494;
+            background-color:white;
+        }
+            table th:not(:last-of-type)
+            {
+                border-right: solid 1px #949494;
+            }
+         table tr
+        {
+            border-bottom: solid 1px #E8E8E8;
+        }
+        tr:nth-child(2n+1)
+        {
+            background-color:#FAFAFA;
+        }
+        table tr:hover
+        {
+            background-color: #caf5c6;
+        }
+
+.Yscrollable {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+

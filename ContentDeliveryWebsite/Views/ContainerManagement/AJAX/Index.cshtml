@@ -1,0 +1,89 @@
+﻿@{
+    Layout = null;
+}
+
+<title>Host management</title>
+
+<header>
+    <li class="menuIcon">
+        <a href="" id="startContainerButton" class="disabled" style="display: none"><div class="sprited iconStart" />Start</a>
+    </li>
+    <li class="menuIcon">
+        <a href="" id="stopContainerButton" class="disabled" style="display: none"><div class="sprited iconStop" />Stop</a>
+    </li>
+    <li class ="menuIcon"><a href="" id="connectContainerButton" class="disabled" style="display: none"><div class="sprited iconConnect" />Connect</a></liclass>
+    <li class="menuIcon"><a href="" id="deleteContainerButton" class="disabled" style="display: none"><div class="sprited iconDelete" />Delete</a></li>
+    <li class="menuIcon"><a href="" id="createContainerButton" class="disabled" style="display: none"><div class="sprited iconPlus" />Create</a></li>
+    <li class="menuIcon">
+        <a href="@Url.Action("GetAddHostForm", new { Controller = "ContainerManagement" })" class="ajaxFormLink addHostButton"><div class="sprited iconPlus" />Add Host</a>
+    </li>
+    <li class="menuIcon"><a href="" id="refreshHostsButton" class="refresher"><div class="sprited iconRefresh" />Refresh</a></li>
+    <li class="menuIcon"><a href="" id="refreshContainerButton" class="refresher" style="display: none"><div class="sprited iconRefresh" />Refresh</a></li>
+    <li class="menuIcon"><a href="" id="refreshImagesButton" class="refresher" style="display: none"><div class="sprited iconRefresh" />Refresh</a></li>
+    <li class="menuIcon"><a href="" id="refreshLinksButton" class="refresher" style="display: none"><div class="sprited iconRefresh" />Refresh</a></li>
+</header>
+
+<section>
+    <form>
+    <fieldset class="hostsFieldset">
+            <legend> Hosts </legend>
+
+        <table id="hostList" class="MobyTable">
+                <thead>
+            <tr>
+                    <th rel="name"> Host name</th>
+                    <th rel="id" style="display:none"> Id </th>
+                    <th rel="port"> Port</th>
+                    <th rel="version"> Version</th>
+            </tr>
+                </thead>
+                <tbody></tbody>
+        </table>
+
+    </fieldset>
+    <fieldset class="hostFieldset">
+        <legend> Containers </legend>
+
+        <table id="containerList" class="MobyTable">
+                <thead>
+            <tr>
+                    <th rel="name"> Name </th>
+                    <th rel="state"> State </th>
+                    <th rel="repository"> Repository </th>
+                    <th rel="image"> Image </th>
+                    <th rel="imageTag"> Image Tag </th>
+                    <th rel="id" style="display:none"> Id </th>
+                    <th rel="hostId" style="display:none"> host Id </th>
+                    <th rel="composeGroup"> Compose group </th>
+                    <th rel="hostName"> Host Name </th>
+            </tr>
+                </thead>
+                <tbody></tbody>
+        </table>
+    </fieldset>
+   
+        <fieldset class="imagesFieldset">
+            <legend> Images </legend>
+
+            <table id="imageList" class="MobyTable">
+                <thead>
+                    <tr>
+                        <th rel="repository">Repository</th>
+                        <th rel="name">Image</th>
+                        <th rel="imageTag">Image Tag</th>
+                        <th rel="size">Size</th>
+                        <th rel="id" style="display:none"> Id </th>
+
+                        <th rel="virtualSize">Virtual Size</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </fieldset>
+        
+        <fieldset class="linksFieldset">
+            <legend> Links </legend>
+            <div id="graph-container"></div>
+        </fieldset>
+    </form>
+</section>

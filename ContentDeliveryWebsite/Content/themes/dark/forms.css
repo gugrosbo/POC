@@ -1,0 +1,277 @@
+﻿
+
+/**********************************************/
+/*                    FORMS                   */
+/**********************************************/
+
+form.ajaxForm
+{
+    padding: 9px;
+}
+
+
+fieldset, fieldset
+{    
+    border:none;
+    margin-right: 15px;
+    padding: 10px;
+    padding-bottom: 65px;
+    display: block;
+    height: -webkit-calc(100% - 65px);
+    height: -moz-calc(100% - 65px);
+    height: -ms-calc(100% - 65px);
+    height: -o-calc(100% - 65px); 
+    height: calc(100% - 65px); 
+}
+
+legend
+{
+    font-family: "Segoe UI light";
+    font-size:2em;
+    background-color:transparent;
+    border-bottom: solid 2px #41a5c6;
+    padding:10px;
+    text-transform:lowercase;
+    width: 95%;
+    margin-bottom: 10px;
+}
+fieldset>dl
+{
+    clear: both;
+    padding:  20px;
+    border-bottom: solid 1px #AAAAAA;
+    background-color: white;
+    overflow: visible;
+}
+fieldset>dl:last-of-type
+{
+    border:none;
+    
+}
+
+    fieldset>dl:hover
+    {
+        background-color: #d3ecf8;
+    }
+    fieldset>dl.disabled {
+        background-color: #909090;
+        color: #303030;
+    }
+    fieldset>dl.disabled input, form dl.disabled select {
+        background-color: lightgray;
+        border: black solid 1px;
+    }
+fieldset>dl>dt
+{
+    float: left;
+    width: 40%;
+    text-transform:uppercase;
+    z-index: 1
+}
+
+fieldset>dl.or:not(.default) {
+    display:none
+}
+
+dl>div.orIcon {
+    position: absolute;
+    top: -18px;
+    padding: 5px;
+    left: 55px;
+    background-color: white;
+    border: solid 2px #909090;
+    z-index:10
+}
+dl>div.orHideBorder {
+     position: absolute;
+    top: -17px;
+    left: 0;
+    background-color: white;
+    z-index: 10;
+    width: 55px;
+    height: 33px;
+}
+fieldset>dl>dd
+{
+    margin-left:42%;
+}
+
+fieldset>dl>dd>ul
+{
+    list-style: none outside none;
+}
+
+     fieldset>dl>dd>table td {
+         text-align: left;
+     }
+  fieldset>table {
+      margin-left: 15px;
+      margin-bottom: 10px;
+  } 
+fieldset>table:before {
+    content: "";
+    display: block;
+    height: 20px;
+}
+form .tip
+{
+    font-style: italic;
+}
+form input.path[type=text] {
+    width: 90%;
+}
+form input.incorectValue[type=text] {
+    border: red solid 1px;
+}
+input[type=submit],form input[type=button]
+{
+    padding: 6px 10px 4px 10px;
+    border: solid 2px black;
+    background-color: white;
+    color:black;
+    font-family: "Segoe UI";
+    font-size:1.0em;
+    font-weight:600;
+}
+    input[type=submit]:hover, form input[type=button]:hover
+    {
+        background-color: #DDDDDD;
+    }
+input[type=radio]
+{
+    display: none;
+}
+fieldset>dl>dd>label:hover
+{
+    color:#41a5c6;
+    cursor: pointer;
+}
+fieldset>dl>dd>label.selectedRadio:hover {
+    cursor: default;
+}
+fieldset>dl>dd>label
+{
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin :0 10px 0 10px;
+    border: solid 2px #CCCCCC;
+}
+
+    fieldset>dl>dd>label.selectedRadio
+    {
+        background-color:#41a5c6;
+        border-color: #404040;
+        color: white;
+    }
+    fieldset>dl>dd>table
+    {
+        border-collapse:collapse;
+        width:80%;
+        background-color:white;
+
+    }
+
+
+input[type=checkbox]
+{
+    margin: 3px;
+}
+
+select, input[type=text] {
+    padding: 7px 15px;
+}
+
+form .submitBox
+{
+    width:100%;
+    text-align:right;
+    margin-top:5px;
+    position: absolute;
+    bottom: 25px;right: 10px;
+}
+
+form .checkbox {
+    display: block;
+    /*margin: auto;*/
+    width: 12px;
+    height:12px;
+    border: solid 1px #303030;
+    
+}
+form .checkbox:hover {
+    cursor: pointer;
+}
+form .checkbox.checked>div {
+    /*see sprites*/
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+form .checkbox.partial>div {
+    height: 8px;
+    width: 8px;
+    background-color: #0086d8;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+#threeStateCheckBoxChoice {
+    display: none;
+}
+
+
+
+div.scrollTableContainer {
+	height: 90%;
+
+}
+div.tableContainer {
+	clear: both;
+	height: 480px;
+	overflow: auto;
+	width: 756px
+}
+
+html>body div.tableContainer {
+	overflow: hidden;
+	width: 776px
+}
+
+
+form input[type=text].search{
+    position: absolute;
+    right: 25px;
+    padding-right: 30px;
+    top: 13px;
+    z-index: 2;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: solid #949494 1px;
+    outline: none;
+}
+
+
+
+
+
+html>body thead.fixedHeader tr {
+	display: block
+}
+
+
+html>body tbody.scrollContent {
+	display: block;
+	height: 200px;
+	overflow: auto;
+	width: 100%
+}
+
+
+
+.masterCheckbox {
+    width: 20px;
+}

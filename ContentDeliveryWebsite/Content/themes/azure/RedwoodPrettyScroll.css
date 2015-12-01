@@ -1,0 +1,15 @@
+﻿div.prettyScrollHorizontal {
+    position : absolute;
+    bottom: 0;
+    left: 0;
+    background-color: brown;
+    height: 8px;
+}
+
+div.prettyScrollVertical {
+    position : absolute;
+    top: 0;
+    right: 0;
+    background-color: brown;
+    width: 8px;
+}

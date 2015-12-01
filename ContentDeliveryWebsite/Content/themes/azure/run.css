@@ -1,0 +1,14 @@
+﻿form.MobyClassicTab .fieldsetBookmark.hostsFieldset  {
+    background-color: dodgerblue;
+}
+form.MobyClassicTab .fieldsetBookmark.containersFieldset  {
+    background-color: darkslateblue;
+}
+
+form.MobyClassicTab .fieldsetBookmark.imagesFieldset  {
+    background-color: lightskyblue;
+}
+
+form.MobyClassicTab .fieldsetBookmark.linksFieldset  {
+    background-color: steelblue;
+}

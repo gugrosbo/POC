@@ -1,0 +1,56 @@
+﻿@using System.Web.Optimization
+@model Microsoft.CDM.Moby.Tools.WttHelperService.Client.Website.Models.ViewModels.BaseViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="currentUrl" content="" />
+    <title>MobyDock</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css");
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/" title="home" class="sprited MobyLogoSmall"></a>
+            Welcome 
+            <br />
+        </div>
+    </header>
+
+
+    <div id="page">
+        <div id="innerHeader">
+            <div id="PageTitle">
+                @ViewBag.Title
+            </div>
+        </div>
+
+        <ul id="tabs" class="reset clearAfter">
+
+            <li id="buildsMenuLinkContainer">
+                <div class=" sprited icon iconHome"></div>
+                @Html.ActionLink("Home", "Index", new { Controller = "Home" }, new { @class = "ajaxLink", @id = "homeMenuLink" })
+            </li>
+
+            <li id="buildsMenuLinkContainer">
+                <div class=" sprited icon iconResults"></div>
+                @Html.ActionLink("Manage", "Index", new { Controller = "ContainerManagement" }, new { @class = "ajaxLink", @id = "mobyDockMenuLink" })</li>
+        </ul>
+
+        <div id="headlines">
+            <ul id="menuBar" class="reset clearAfter">
+                @RenderSection("MenuItems", true)
+            </ul>
+        </div>
+        <div id="content">
+            @RenderBody()
+        </div>
+    </div>
+
+</body>
+</html>

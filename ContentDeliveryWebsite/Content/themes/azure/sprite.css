@@ -1,0 +1,39 @@
+﻿.sprited { background: url(./images/sprite2.png) no-repeat;display: block;}
+.inline {float: left;margin-right: 3px;}
+.MobyLogoSmall {background-position: -3px -271px; width: 175px; height: 34px}
+.active>.iconRun {background-position: -162px -136px;}
+.iconRun {background-position: -162px -85px;  width: 40px; height: 32px}
+.iconResults{background-position: -211px -87px; width: 40px; height: 32px}
+.active>.iconResults{background-position: -211px -138px; }
+.iconHome{background-position: -35px -153px; width: 40px; height: 32px}
+.active>.iconHome{background-position: 0 -153px; }
+
+
+.iconPlus{background-position: -79px -170px; width: 25px; height: 25px}
+.disabled .iconPlus{background-position: -79px -196px;}
+.iconStart{background-position: -450px -316px; width: 25px; height: 25px}
+.disabled .iconStart{background-position: -450px -342px;}
+.iconStop{background-position: -448px -381px; width: 25px; height: 25px}
+.disabled .iconStop{background-position: -448px -407px;}
+.iconConnect{background-position: -567px -56px; width: 32px; height: 26px}
+.disabled .iconConnect{background-position: -215px -222px;}
+.iconRefresh{background-position: -302px -318px; width: 25px; height: 25px}
+.iconDelete{background-position: -422px -123px; width: 25px; height: 25px}
+.disabled .iconDelete{background-position: -260px -496px; width: 25px; height: 25px}
+
+.iconReset{background-position: -137px -572px; width: 31px; height: 31px}
+.iconAnalyze{background-position: -230px -572px; width: 31px; height: 31px}
+form .checkbox.checked>div{background:url(images/sprite2.png) no-repeat -10px -565px ;height: 17px;width: 17px;}
+.search{background:#EFEFEF url(images/sprite2.png) no-repeat 152px -579px;height: 15px;width: 150px;}
+
+.orderedDesc>.orderDisplay {background-position: -324px -417px; width: 10px; height: 15px}
+.ordered>.orderDisplay {background-position: -337px -417px; width: 10px; height: 15px}
+.filterDisplay{background-position: -306px -417px; width: 15px;height: 15px;}
+
+.iconNotStarted{background-position: -166px -180px; width: 15px; height: 15px}
+.iconInProgress{background-position: -182px -180px; width: 15px; height:15px}
+.iconPassed{background-position: -150px -180px; width: 15px; height: 15px}
+.iconFailed{background-position: -129px -180px; width: 15px; height: 15px}
+.iconCancelled{background-position: -214px -180px; width: 15px; height: 15px}
+.iconEdit{background-position: -420px -507px;width: 25px;height: 25px;}
+.iconCancel{background-position: -420px -122px;width: 25px;height: 25px;}

@@ -1,0 +1,97 @@
+﻿
+/**********************************************/
+/*                    Tiles                  */
+/**********************************************/
+
+ul.tileList
+{
+    display: block;
+    clear:both;
+}
+
+    ul.tileList:after
+    {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    ul.tileList > li
+    {
+        display: block;
+        width: 245px;
+        height: 160px;
+        margin: 5px;
+        position: relative;
+        padding: 5px;
+        float: left;
+    }
+
+    ul.tileList li.green
+    {
+        background-color: #55bc40;
+    }
+
+    ul.tileList li.orange
+    {
+        background-color: orange;
+    }
+
+    ul.tileList li.red
+    {
+        background-color: red;
+    }
+
+
+
+    ul.tileList > li > ul
+    {
+        list-style-position: outside;
+        list-style: none;
+        list-style-image: none;
+        list-style-type: none;
+        padding-left: 12px;
+        height: 100%
+    }
+
+        ul.tileList > li > ul > li
+        {
+            font-size: 0.8em;
+            color: white;
+            
+
+        }
+
+            ul.tileList > li > ul > li.highlight
+            {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 1.5em;
+            }
+
+            ul.tileList > li > ul > li.icon
+            {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+
+    ul.tileList > li > h1
+    {
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        font-size: 2em;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+

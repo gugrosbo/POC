@@ -1,0 +1,29 @@
+﻿/*#resultTree .fieldsetWrapper.active {
+    width: 80%;
+}*/
+#resultTree .checkbox {
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#resultTree h2, #resultTree h3{
+    margin-left: 25px;
+}
+#resultTree ul{
+    margin-left: 30px;}
+#resultTree>ul {
+    height: 400px;
+}
+#resultTree table {
+    margin: 10px 30px;
+}
+#resultTree .fieldsetBookmark.passedRuns {
+    background-color: lightgreen;
+} 
+#resultTree .fieldsetBookmark.failedRuns {
+    background-color: lightcoral;
+} 
+#resultTree .fieldsetBookmark.inProgressRuns {
+    background-color: orange;
+} 

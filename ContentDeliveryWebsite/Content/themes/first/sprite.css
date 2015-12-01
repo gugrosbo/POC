@@ -1,0 +1,27 @@
+﻿.sprited {display: block; background: url(images/sprite.png) no-repeat}
+.iconChecklist {background-position: 0 -75px; width: 100px; height: 100px}
+.iconSnergy {background-position: -100px -80px; width: 110px; height: 110px}
+.iconHome {background-position: -144px 0; width: 65px; height: 55px}
+.iconHomeSmall {background-position: 0 0; width: 35px; height: 35px}
+.iconInfrastructure1 {background-position: -209px 0; width: 75px; height: 72px}
+.iconInfrastructure2 {background-position: -210px -80px; width: 110px; height: 110px}
+.iconCircledMinus {background-position: -340px 0; width: 48px; height: 48px}
+.iconCircledPlus {background-position: -388px 0; width: 48px; height: 47px}
+.iconCircledSearch {background-position: -436px 0; width: 48px; height: 49px}
+.iconCircledLeftArrow {background-position: -484px 0; width: 49px; height: 48px}
+.iconCircledLeftArrow:hover {background-position: -484px -48px; width: 49px; height: 48px}
+.iconTrash {background-position: -533px 0; width: 24px; height: 32px}
+.iconLock {background-position: -557px 0; width: 21px; height: 30px}
+.iconRefresh {background-position: -578px 0; width: 28px; height: 29px}
+.iconProblem {background-position: -606px 0; width: 8px; height: 31px}
+.iconCalendar {background-position: -614px 0; width: 36px; height: 29px}
+.iconHealthyHeart {background-position: -650px 0; width: 29px; height: 24px}
+.iconBrokenHeart {background-position: -679px 0; width: 30px; height: 24px}
+.iconPaperClip {background-position: -709px 0; width: 19px; height: 39px}
+.iconLeftArrow {background-position: -728px 0; width: 36px; height: 26px}
+.iconOptions {background-position: -764px 0; width: 35px; height: 21px}
+.iconCheck {background-position: -799px 0; width: 53px; height: 45px}
+.iconLosange {background-position: -852px 0; width: 65px; height: 65px}
+.iconMail {background-position: -917px 0; width: 67px; height: 47px}
+.iconAnalytics {background-position: -320px -80px; width: 110px; height: 110px}
+form .checkbox.checked>div{background:url(images/sprite.png) no-repeat 0 0;height: 17px;width: 17px;}

@@ -1,0 +1,228 @@
+﻿html {
+    background: #292929; /* Old browsers */
+    background: -moz-linear-gradient(left, #292929 0%, #d8d8d8 50%, #292929 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#292929), color-stop(50%,#d8d8d8), color-stop(100%,#292929)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #292929 0%,#d8d8d8 50%,#292929 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #292929 0%,#d8d8d8 50%,#292929 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #292929 0%,#d8d8d8 50%,#292929 100%); /* IE10+ */
+    background: linear-gradient(to right, #292929 0%,#d8d8d8 50%,#292929 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#292929',GradientType=1 ); /* IE6-9 */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    color: lightgray;
+    width: 100%;
+    height: 45px;
+    z-index: 10;
+    background-color: #010101;
+}
+
+    header > div {
+        position: relative;
+        left: 0%;
+        text-align: center;
+        z-index: 10;
+        width: 1436px;
+        margin: auto;
+        height: 15px;
+        padding: 10px;
+    }
+
+        header > div form {
+            position: absolute;
+            top: 2px;
+            right: 25px;
+        }
+        header > div form#styleSelectForm {
+            position: absolute;
+            top: 2px;
+            left: -900px;
+        }
+
+    header ul {
+        width: 100%;
+        margin: auto;
+    }
+
+        header ul li {
+            float: left;
+        }
+
+
+.fixed {
+    position: fixed;
+    top: 45px;
+}
+
+#page {
+    background-color: #1a1a1a;
+    position: relative;
+    top: 45px;
+    margin: auto;
+    width: 75%;
+    max-width: 1200px;
+    position: relative;
+    min-height: 584px;
+    height: -webkit-calc(100% - 45px);
+    height: -moz-calc(100% - 45px);
+    height: -ms-calc(100% - 45px);
+    height: -o-calc(100% - 45px);
+    height: calc(100% - 45px);
+}
+
+#innerHeader {
+}
+
+#headlines {
+    z-index: 2;
+    margin-left: 165px;
+    width: -webkit-calc(100% - 165px);
+    width: -moz-calc(100% - 165px);
+    width: -ms-calc(100% - 165px);
+    width: -o-calc(100% - 165px);
+    width: calc(100% - 165px);
+}
+
+    
+
+#PageTitle {
+    position: absolute;
+    right: 0;
+    padding: 15px 30px 0 30px;
+    height: 43px;
+    background-color: #d6d6d6;
+    color: #EFEFEF;
+    z-index: 3;
+    font-size: 1.5em;
+}
+
+
+
+ul#tabs {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 146px;
+    height: 100%;
+    background-color: #434343;
+    z-index: 1;
+}
+
+    ul#tabs > li {
+        margin-top: 0px;
+        width: 100%;
+        height: 144px;
+        position: relative;
+    }
+
+        ul#tabs > li > a {
+            color: #CCCCCC;
+            display: block;
+            width: 132px;
+            height: 44px;
+            padding: 7px;
+            padding-top: 99px;
+            font-size: 1.3em;
+            text-decoration: none;
+            font-family: "Segoe UI Light";
+            text-align: center;
+        }
+
+        ul#tabs > li.active a {
+            color: #EEEEEE;
+        }
+
+        ul#tabs > li > a:hover, ul#tabs > li.selected {
+            background-color: rgba(255,255,255,0.4);
+            color: #202020;
+        }
+
+
+
+        ul#tabs > li.MobyLogo {
+            display: block;
+            position: absolute;
+            background-color: #1a1a1a;
+            bottom: 10px;
+            width: 307px;
+            height: 75px;
+        }
+
+
+    ul#tabs li#controls > ul > li {
+        margin-top: 15px;
+    }
+
+#controlLast {
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+
+
+
+ul#menuBar {
+    border-bottom: #d6d6d6 2px solid;
+    background-color: #1a1a1a;
+}
+
+    ul#menuBar li:not(:first-child) {
+        border-left: solid 1px #797979;
+    }
+    #menuBar li.menuIcon > div {
+        position: absolute;
+        left: 10px;
+        top: 4px;
+        z-index: 1;
+        opacity: 0.86;
+    }
+
+    #menuBar li.menuIcon a {
+        padding-left: 67px;
+        z-index: 10;
+    }
+    ul#menuBar li a {
+        font-size: 1.1em;
+        font-family: "Segoe UI Light";
+        padding: 15px 20px 18px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        color: #d5d5d5;
+    }
+
+        ul#menuBar li a:visited {
+            color: #d5d5d5;
+        }
+
+        ul#menuBar li a:hover {
+            color: #ef9655;
+        }
+
+    ul#menuBar li {
+        float: left;
+    }
+    ul#menuBar li:hover {
+        background-color: #000;
+    }
+    
+
+#PageTitle {
+    color: #797979;
+    text-decoration: none;
+}
+
+#content {
+    margin-left: 160px;
+    margin-right: 20px;
+    max-height: 100%;
+    padding: 10px;
+    padding-right: 22px;
+    margin-top: 20px;
+    z-index: 10;
+}
+

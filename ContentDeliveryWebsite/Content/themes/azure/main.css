@@ -1,0 +1,216 @@
+﻿html {
+background: #eaeaea; /* Old browsers */
+background: -moz-linear-gradient(left, #eaeaea 0%, #eaeaea 10%, #a0a0a0 20%, #a0a0a0 80%, #eaeaea 90%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eaeaea), color-stop(15%,#eaeaea), color-stop(20%,#a0a0a0), color-stop(80%,#a0a0a0), color-stop(90%,#eaeaea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #eaeaea 0%,#eaeaea 8%,#a0a0a0 11%,#a0a0a0 89%,#eaeaea 92%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #eaeaea 0%,#eaeaea 20%,#a0a0a0 35%,#a0a0a0 63%,#eaeaea 78%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #eaeaea 0%,#eaeaea 20%,#a0a0a0 35%,#a0a0a0 63%,#eaeaea 78%); /* IE10+ */
+background: linear-gradient(to right, #eaeaea 0%,#eaeaea 20%,#a0a0a0 35%,#a0a0a0 63%,#eaeaea 78%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 6%;
+    color: lightgray;
+    width: 88%;
+    height: 28px;
+    z-index: 10;
+    background-color: rgb(60, 69, 79);
+    text-align: center;
+    padding-top: 7px;
+}
+
+header > div > a.MobyLogoSmall {
+    position: absolute;
+    top:-6px;
+    left: 5px;
+}
+        header > div > form {
+            position: absolute;
+            top: 0px;
+            right: 25px;
+        }
+
+
+    header ul {
+        width: 100%;
+        margin: auto;
+    }
+
+        header ul li {
+            float: left;
+        }
+
+
+.fixed {
+    position: fixed;
+    top: 35px;
+}
+
+#page {
+    background-color: #FFF;
+    position: relative;
+    top: 18px;
+    margin: auto;
+    width: 88%;
+    position: relative;
+    min-height: 100px;
+    height: -webkit-calc(100% - 35px);
+    height: -moz-calc(100% - 35px);
+    height: -ms-calc(100% - 35px);
+    height: -o-calc(100% -35px);
+    height: calc(100% - 35px);
+}
+
+ul#tabs {
+    position: fixed;
+    left: 6%;
+    top: 0px;
+    width: 200px;
+    height: 100%;
+    background-color: #71b1d1;
+    z-index: 10;
+}
+    ul#tabs > li:first-child {
+        margin-top: 70px;
+    }
+
+    ul#tabs > li {
+        width: 100%;
+        height: 50px;
+        position: relative;
+    }
+
+        ul#tabs > li > a {
+            color: #FFF;
+            display: block;
+            width: 100%;
+            height: 32px;
+            padding-top: 18px;
+            font-size: 1.3em;
+            text-decoration: none;
+            text-indent: 60px;
+            font:bold 11px/11px "Segoe UI";
+            text-transform: uppercase;
+            z-index: 2;
+        }
+
+        ul#tabs > li > .icon {
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            z-index:1;
+        }
+
+        ul#tabs > li.active {
+            background-color: #FFF
+        }
+        ul#tabs > li.active a {
+            color: #1a1a1a;
+            width: 100%;
+        }
+
+        ul#tabs > li:not(.active):hover, ul#tabs > li.selected {
+            background-color: rgba(156, 216, 242, 0.30);
+        }
+
+
+    ul#tabs li#controls > ul > li {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+ul#tabs #controlLast {
+    height: 50px;
+    width: 50px;
+    background-position: -492px -564px;
+}
+#innerHeader {
+    position: relative;
+    z-index: 4
+}
+#headlines {
+    z-index: 12;
+    margin-left: 165px;
+    width: -webkit-calc(100% - 165px);
+    width: -moz-calc(100% - 165px);
+    width: -ms-calc(100% - 165px);
+    width: -o-calc(100% - 165px);
+    width: calc(100% - 165px);
+}
+ul#menuBar {
+    background-color: #3c454f;
+    position: fixed;
+    bottom: 0%;
+    left: 6%;
+    width: 88%;
+    height: 60px;
+}
+
+    ul#menuBar li:not(:first-child) {
+        border-left: solid 1px #797979;
+    }
+    #menuBar li.menuIcon  div {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        z-index: 1;
+        opacity: 0.86;
+    }
+
+    #menuBar li.menuIcon a {
+        padding-left: 60px;
+        z-index: 10;
+    }
+    ul#menuBar li a {
+        font-size: 14px;
+        font-family: "Segoe UI Semibold";
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        color: #FFF;
+        height: 20px;
+    }
+        
+        ul#menuBar li a:visited {
+            color: #d5d5d5;
+        }
+        ul#menuBar li a.disabled {
+            color: #1a1a1a;
+        }
+
+    ul#menuBar li {
+        float: left;
+    }
+    ul#menuBar li:hover {
+        background-color: #697c92;
+    }
+    
+
+#PageTitle {
+    padding: 15px 30px 0 30px;
+    margin-left: 200px; 
+    height: 43px;
+    color: #797979;
+    z-index: 3;
+    font-size: 1.5em;
+    font: 28px/40px "Segoe UI light";
+     text-transform: lowercase;
+}
+
+#content {
+    margin-left: 200px;
+    margin-right: 20px;
+    max-height: 100%;
+    padding: 10px;
+    padding-right: 22px;
+    margin-top: 20px;
+    z-index: 10;
+    overflow: scroll;
+   
+}
+
+

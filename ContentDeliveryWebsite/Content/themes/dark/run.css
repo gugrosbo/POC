@@ -1,0 +1,38 @@
+﻿
+#runs dt ul li {
+    float: left;
+    margin: 50px;
+}
+
+#runs dd {
+    clear: both;
+}
+
+#runs tr:nth-child(2n+1), #runs tr:nth-child(2n+1) td {
+    
+    border-bottom: none;
+}
+#runs tr:nth-child(2n), #runs tr:nth-child(2n) td {
+    border-top: none;
+}
+#runs tr:nth-child(4n+1), #runs tr:nth-child(4n+2) {
+    background-color: #FAFAFA;
+}
+#runs tr:nth-child(4n), #runs tr:nth-child(4n+3) {
+    background-color: #FEFEFE;
+}
+
+
+#runs .fieldsetBookmark.Completed {
+    background-color: gray;
+} 
+#runs .fieldsetBookmark.Error {
+    background-color: lightcoral;
+} 
+#runs .fieldsetBookmark.InProgress {
+    background-color: orange;
+} 
+
+#runs .fieldsetBookmark.Queued {
+    background-color: cornflowerblue;
+}

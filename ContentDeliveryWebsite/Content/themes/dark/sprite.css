@@ -1,0 +1,22 @@
+﻿.sprited { background: url(./images/sprite.png) no-repeat;display: block;}
+.MobyLogo {background-position: -2px -424px; width: 335px; height: 105px}
+.iconChecklist.active {background-position: -148px -244px; }
+.iconChecklist {background-position: -148px -100px;  width: 148px; height: 144px}
+.iconCircledLeftArrow {background-position: -484px 0; width: 49px; height: 48px}
+.iconCircledLeftArrow:hover {background-position: -484px -48px;}
+.check {background-position: 0 0; width: 25px; height: 19px}
+.iconCheck {background-position: -799px 0; width: 53px; height: 45px}
+.iconRun.active {background-position: 0 -244px;}
+.iconRun {background-position: 0 -100px;  width: 148px; height: 144px}
+.iconAnalytics {background-position: -356px -75px; width: 55px; height: 55px}
+.iconPlus{background-position: -24px 0; width: 47px; height: 47px}
+.iconResults{background-position: -167px 0; width: 47px; height: 47px}
+.iconReset{background-position: -119px 0; width: 47px; height: 47px}
+.iconAnalyze{background-position: -214px 0; width: 47px; height: 47px}
+form .checkbox.checked>div{background:url(images/sprite.png) no-repeat 0 0;height: 17px;width: 17px;}
+.search{background:#EFEFEF url(./images/sprite.png) no-repeat 169px -15px;height: 15px;width: 150px;}
+
+.menuIcon:hover>div:first-child{ background-position-y: -47px;}
+.orderedDesc>.orderDisplay {background-position: 0 -86px; width: 17px; height: 12px}
+.ordered>.orderDisplay {background-position: 0 -71px; width: 17px; height: 12px}
+.filterDisplay {background-position: 0 -71px; width: 17px; height: 12px}
