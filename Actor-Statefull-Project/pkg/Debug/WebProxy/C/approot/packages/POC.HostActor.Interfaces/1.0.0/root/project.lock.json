@@ -234,7 +234,7 @@
     },
     "POC.HostActor.Interfaces/1.0.0": {
       "type": "package",
-      "sha512": "ACocFc+QUuUdTtek6ENgud4F9PDm8qf9XrFU6sNR44s4TNIZouFUEd8bCaG+cXYaQFFyyPS9OI7YccFlYrFjCA==",
+      "sha512": "1+9Qmq0gOqQ4Q8Tx50d69+mP7cUtT6Kpizk2CDxbVYNYhcdLf3en1pFthMSyFJx1ydv32EwwACKB84e7WMBgLg==",
       "files": [
         "lib/net451/POC.HostActor.Interfaces.dll",
         "POC.HostActor.Interfaces.1.0.0.nupkg",

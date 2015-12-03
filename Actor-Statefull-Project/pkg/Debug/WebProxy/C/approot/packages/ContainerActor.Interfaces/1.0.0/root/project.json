@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net451": {
+      "wrappedProject": "../../ContainerActor.Interfaces/ContainerActor.Interfaces.csproj",
+      "bin": {
+        "assembly": "../../ContainerActor.Interfaces/obj/x64/{configuration}/ContainerActor.Interfaces.dll",
+        "pdb": "../../ContainerActor.Interfaces/obj/x64/{configuration}/ContainerActor.Interfaces.pdb"
+      },
+      "dependencies": {
+        "Microsoft.ServiceFabric": "4.4.87-preview",
+        "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+        "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+        "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+        "POC.HostActor.Interfaces": "1.0.0-*",
+        "Actor1": "1.0.0-*"
+      }
+    }
+  },
+  "entryPoint": "ContainerActor.Interfaces",
+  "loadable": false,
+  "dependencies": {
+    "ContainerActor.Interfaces": "1.0.0"
+  }
+}

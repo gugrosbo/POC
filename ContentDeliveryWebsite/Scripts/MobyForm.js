@@ -234,9 +234,9 @@
                         form.find("input[type=submit]").prop("disabled", false);
                     }
 
-                    var data = params.submitMode == "json" 
-                        ? JSON.stringify(params.filterFormBeforeSubmit(form).serializeArray()) 
-                        : params.filterFormBeforeSubmit(form).serialize() + "&" + triggeringButton.attr("name")+"="+triggeringButton.val()
+                    var data = params.submitMode == "json"
+                        ? JSON.stringify(params.filterFormBeforeSubmit(form).serializeArray())
+                        : params.filterFormBeforeSubmit(form).serialize();//+ "&" + triggeringButton.attr("name")+"="+triggeringButton.val()
 
                     $.ajax({
                         url: form.attr("action"),

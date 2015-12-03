@@ -7,8 +7,6 @@ Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Actor_Statefull_Project", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostActor.Interfaces", "Actor1.Interfaces\HostActor.Interfaces.csproj", "{BD8C9C0A-B3A9-4DC5-AB98-94F627842FC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentDeliveryWebsite", "..\MobyDockManagement\MobyDockManagement\ContentDeliveryWebsite\ContentDeliveryWebsite.csproj", "{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobyDockMgmtService", "..\MobyDockManagement\MobyDockManagement\MobyDockMgmtService\MobyDockMgmtService.csproj", "{BA196DEF-A350-4DBB-B8B3-B9064EA8251D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostActor", "Actor1\HostActor.csproj", "{F40F1988-7352-49CD-87D5-C53A6C81BCA9}"
@@ -24,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageActor", "ImageActor\ImageActor.csproj", "{452ECC58-4DB0-41E5-A785-87B1E153556C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageActor.Interfaces", "ImageActor.Interfaces\ImageActor.Interfaces.csproj", "{34AD19AB-3D99-48DC-ABD2-2CE8CD65B50F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentDeliveryWebsite", "ContentDeliveryWebsite\ContentDeliveryWebsite.csproj", "{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,14 +47,6 @@ Global
 		{BD8C9C0A-B3A9-4DC5-AB98-94F627842FC2}.Release|Any CPU.ActiveCfg = Release|x64
 		{BD8C9C0A-B3A9-4DC5-AB98-94F627842FC2}.Release|x64.ActiveCfg = Release|x64
 		{BD8C9C0A-B3A9-4DC5-AB98-94F627842FC2}.Release|x64.Build.0 = Release|x64
-		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Debug|x64.Build.0 = Debug|Any CPU
-		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Release|x64.ActiveCfg = Release|Any CPU
-		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Release|x64.Build.0 = Release|Any CPU
 		{BA196DEF-A350-4DBB-B8B3-B9064EA8251D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BA196DEF-A350-4DBB-B8B3-B9064EA8251D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA196DEF-A350-4DBB-B8B3-B9064EA8251D}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -109,6 +101,14 @@ Global
 		{34AD19AB-3D99-48DC-ABD2-2CE8CD65B50F}.Release|Any CPU.ActiveCfg = Release|x64
 		{34AD19AB-3D99-48DC-ABD2-2CE8CD65B50F}.Release|x64.ActiveCfg = Release|x64
 		{34AD19AB-3D99-48DC-ABD2-2CE8CD65B50F}.Release|x64.Build.0 = Release|x64
+		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Debug|x64.Build.0 = Debug|Any CPU
+		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Release|x64.ActiveCfg = Release|Any CPU
+		{AE5F6CD5-255F-495E-98FC-68B1EA42AD65}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

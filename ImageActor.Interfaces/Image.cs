@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ImageActor.Interfaces
 {
-    class Image
+    public class Image
     {
         public string Id { get; set; }
         public string ImageTag { get; set; }

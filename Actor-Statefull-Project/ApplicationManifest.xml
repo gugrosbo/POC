@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="Actor_Statefull_ProjectType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
    <Parameters>
+      <Parameter Name="ImageActorService_PartitionCount" DefaultValue="10" />
+      <Parameter Name="ContainerActorService_PartitionCount" DefaultValue="10" />
       <Parameter Name="HostActorService_PartitionCount" DefaultValue="10" />
       <Parameter Name="HostActorService_MinReplicaSetSize" DefaultValue="2" />
       <Parameter Name="HostActorService_TargetReplicaSetSize" DefaultValue="3" />
    </Parameters>
    <ServiceManifestImport>
-     <ServiceManifestRef ServiceManifestName="ImageActorPkg" ServiceManifestVersion="1.0.0" />
-   </ServiceManifestImport>
-   <ServiceManifestImport>
-     <ServiceManifestRef ServiceManifestName="ContainerActorPkg" ServiceManifestVersion="1.0.0" />
-   </ServiceManifestImport>
-   <ServiceManifestImport>
       <ServiceManifestRef ServiceManifestName="WebProxy" ServiceManifestVersion="1.0.0" />
+   </ServiceManifestImport>
+   <ServiceManifestImport>
+      <ServiceManifestRef ServiceManifestName="ImageActorPkg" ServiceManifestVersion="1.0.0" />
+   </ServiceManifestImport>
+   <ServiceManifestImport>
+      <ServiceManifestRef ServiceManifestName="ContainerActorPkg" ServiceManifestVersion="1.0.0" />
    </ServiceManifestImport>
    <ServiceManifestImport>
       <ServiceManifestRef ServiceManifestName="HostActorPkg" ServiceManifestVersion="1.0.0" />
@@ -21,6 +23,16 @@
       <Service Name="WebProxyService">
          <StatelessService ServiceTypeName="WebProxyType">
             <SingletonPartition />
+         </StatelessService>
+      </Service>
+      <Service Name="ImageActorService" GeneratedIdRef="b0fc26b5-9dee-42f3-8c20-29caf29dbeb3">
+         <StatelessService ServiceTypeName="ImageActorServiceType">
+            <UniformInt64Partition PartitionCount="[ImageActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+         </StatelessService>
+      </Service>
+      <Service Name="ContainerActorService" GeneratedIdRef="9b1fa963-17ed-42b2-9654-f88406285bf3">
+         <StatelessService ServiceTypeName="ContainerActorServiceType">
+            <UniformInt64Partition PartitionCount="[ContainerActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
          </StatelessService>
       </Service>
       <Service Name="HostActorService" GeneratedIdRef="bf073c35-746b-485e-a1d1-39112333b658">

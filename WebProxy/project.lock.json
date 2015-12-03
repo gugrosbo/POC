@@ -40,6 +40,27 @@
           "POC.HostActor.Interfaces": "1.0.0"
         }
       },
+      "ImageActor/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "ImageActor.Interfaces": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        }
+      },
+      "ImageActor.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        }
+      },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -1794,6 +1815,27 @@
           "Microsoft.ServiceFabric.Data": "1.4.87-preview",
           "Microsoft.ServiceFabric.Services": "1.4.87-preview",
           "POC.HostActor.Interfaces": "1.0.0"
+        }
+      },
+      "ImageActor/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "ImageActor.Interfaces": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        }
+      },
+      "ImageActor.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
         }
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
@@ -3555,6 +3597,27 @@
           "POC.HostActor.Interfaces": "1.0.0"
         }
       },
+      "ImageActor/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "ImageActor.Interfaces": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        }
+      },
+      "ImageActor.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        }
+      },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -5289,6 +5352,14 @@
     "ContainerActor.Interfaces/1.0.0": {
       "type": "project",
       "path": "../wrap/ContainerActor.Interfaces/project.json"
+    },
+    "ImageActor/1.0.0": {
+      "type": "project",
+      "path": "../wrap/ImageActor/project.json"
+    },
+    "ImageActor.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../wrap/ImageActor.Interfaces/project.json"
     },
     "POC.HostActor.Interfaces/1.0.0": {
       "type": "project",
@@ -7297,6 +7368,8 @@
       "Actor1 >= 1.0.0-*",
       "ContainerActor >= 1.0.0-*",
       "ContainerActor.Interfaces >= 1.0.0-*",
+      "ImageActor >= 1.0.0-*",
+      "ImageActor.Interfaces >= 1.0.0-*",
       "POC.HostActor.Interfaces >= 1.0.0-*",
       "fx/System.Web >= 4.0.0",
       "fx/System.Web.Services >= 4.0.0"

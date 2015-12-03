@@ -25,6 +25,10 @@
       "dnx451": {
         "dependencies": {
           "Actor1": "1.0.0-*",
+          "ContainerActor": "1.0.0-*",
+          "ContainerActor.Interfaces": "1.0.0-*",
+          "ImageActor": "1.0.0-*",
+          "ImageActor.Interfaces": "1.0.0-*",
           "POC.HostActor.Interfaces": "1.0.0-*"
         },
         "frameworkAssemblies": {

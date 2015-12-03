@@ -1,1 +1,2 @@
 C:\enlistment\POC\Actor-Statefull-Project\obj\x64\Debug\Actor_Statefull_Project.sfprojResolveAssemblyReference.cache
+C:\enlistment\POC-GIT\Actor-Statefull-Project\obj\x64\Debug\Actor_Statefull_Project.sfprojResolveAssemblyReference.cache

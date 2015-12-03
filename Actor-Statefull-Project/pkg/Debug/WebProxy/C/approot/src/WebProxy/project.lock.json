@@ -19,6 +19,85 @@
           "System.Core"
         ]
       },
+      "ContainerActor/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Actor1": "1.0.0",
+          "ContainerActor.Interfaces": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0",
+          "RestSharp": "105.2.3"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ]
+      },
+      "ContainerActor.Interfaces/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Actor1": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/ContainerActor.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net451/ContainerActor.Interfaces.dll": {}
+        }
+      },
+      "ImageActor/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ImageActor.Interfaces": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ]
+      },
+      "ImageActor.Interfaces/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/ImageActor.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net451/ImageActor.Interfaces.dll": {}
+        }
+      },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -1527,6 +1606,15 @@
           "lib/net451/POC.HostActor.Interfaces.dll": {}
         }
       },
+      "RestSharp/105.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net451/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net451/RestSharp.dll": {}
+        }
+      },
       "System.Collections/4.0.0": {
         "type": "package",
         "compile": {
@@ -1755,6 +1843,85 @@
           "System",
           "System.Core"
         ]
+      },
+      "ContainerActor/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Actor1": "1.0.0",
+          "ContainerActor.Interfaces": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0",
+          "RestSharp": "105.2.3"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ]
+      },
+      "ContainerActor.Interfaces/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Actor1": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/ContainerActor.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net451/ContainerActor.Interfaces.dll": {}
+        }
+      },
+      "ImageActor/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ImageActor.Interfaces": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ]
+      },
+      "ImageActor.Interfaces/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/ImageActor.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net451/ImageActor.Interfaces.dll": {}
+        }
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -3267,6 +3434,15 @@
           "lib/net451/POC.HostActor.Interfaces.dll": {}
         }
       },
+      "RestSharp/105.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net451/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net451/RestSharp.dll": {}
+        }
+      },
       "System.Collections/4.0.0": {
         "type": "package",
         "compile": {
@@ -3483,11 +3659,57 @@
   "libraries": {
     "Actor1/1.0.0": {
       "type": "package",
-      "sha512": "F71pvbl97ygJcE1LoW1VOT7bXwP7siu0Rp7mckM/yeiWNlw9s6dTqwdgJTfA3C21RP9AoTlRcAx5Xlgd1AQJvg==",
+      "sha512": "2OACbLx+gVV/bH3O1DsCXWPu8rss4xRRzwOBzco8zNszLhHfToiCCPeZ47pu+Z5gNbK88+QQOA4nbkJq+RZj+w==",
       "files": [
         "Actor1.1.0.0.nupkg",
         "Actor1.1.0.0.nupkg.sha512",
         "Actor1.nuspec",
+        "root/project.json",
+        "root/project.lock.json"
+      ]
+    },
+    "ContainerActor/1.0.0": {
+      "type": "package",
+      "sha512": "Hc2Rc73WEsT8IJCSkMncrlVuqL3sNzzPc1rEQuVemeb4KJteyjwvu6w3r0hG4+kYRFJbDP/UKJW2qz8QvyTCMA==",
+      "files": [
+        "ContainerActor.1.0.0.nupkg",
+        "ContainerActor.1.0.0.nupkg.sha512",
+        "ContainerActor.nuspec",
+        "root/project.json",
+        "root/project.lock.json"
+      ]
+    },
+    "ContainerActor.Interfaces/1.0.0": {
+      "type": "package",
+      "sha512": "WRRrbCdf/ZY9L924ehzeInPrirlMBZibz+sxYQeLf2Be11nJ/n5jKScbNWchm6l1XeWHLJsG8Egb34vGlKKYkw==",
+      "files": [
+        "ContainerActor.Interfaces.1.0.0.nupkg",
+        "ContainerActor.Interfaces.1.0.0.nupkg.sha512",
+        "ContainerActor.Interfaces.nuspec",
+        "lib/net451/ContainerActor.Interfaces.dll",
+        "root/project.json",
+        "root/project.lock.json"
+      ]
+    },
+    "ImageActor/1.0.0": {
+      "type": "package",
+      "sha512": "fxZzA/quen5RROHGcPBEcwOlHWSycwz3O8udXmEtwXHEvhYUzKjnjptDv/OG+dZHU9NLqSNG/NjBImQmFWKEJw==",
+      "files": [
+        "ImageActor.1.0.0.nupkg",
+        "ImageActor.1.0.0.nupkg.sha512",
+        "ImageActor.nuspec",
+        "root/project.json",
+        "root/project.lock.json"
+      ]
+    },
+    "ImageActor.Interfaces/1.0.0": {
+      "type": "package",
+      "sha512": "npE/Da3FwB72RAGZqPLeIBuXIkhiQH+rKXt71lZNc/ZTI24JT8m9omriuqcHPjqplmHjbri0gKP4C4O6gk0AWA==",
+      "files": [
+        "ImageActor.Interfaces.1.0.0.nupkg",
+        "ImageActor.Interfaces.1.0.0.nupkg.sha512",
+        "ImageActor.Interfaces.nuspec",
+        "lib/net451/ImageActor.Interfaces.dll",
         "root/project.json",
         "root/project.lock.json"
       ]
@@ -4669,7 +4891,7 @@
     },
     "POC.HostActor.Interfaces/1.0.0": {
       "type": "package",
-      "sha512": "ACocFc+QUuUdTtek6ENgud4F9PDm8qf9XrFU6sNR44s4TNIZouFUEd8bCaG+cXYaQFFyyPS9OI7YccFlYrFjCA==",
+      "sha512": "1+9Qmq0gOqQ4Q8Tx50d69+mP7cUtT6Kpizk2CDxbVYNYhcdLf3en1pFthMSyFJx1ydv32EwwACKB84e7WMBgLg==",
       "files": [
         "lib/net451/POC.HostActor.Interfaces.dll",
         "POC.HostActor.Interfaces.1.0.0.nupkg",
@@ -4677,6 +4899,42 @@
         "POC.HostActor.Interfaces.nuspec",
         "root/project.json",
         "root/project.lock.json"
+      ]
+    },
+    "RestSharp/105.2.3": {
+      "type": "package",
+      "sha512": "50LkciOclb7Lza9QXqR9reKeUoPlDQiFD4iBdOmd6twOBmTtqEFIOXQgdDdsTHQg4HcGh6EvrM6gN1X72vkJLA==",
+      "files": [
+        "lib/MonoAndroid10/RestSharp.dll",
+        "lib/MonoAndroid10/RestSharp.xml",
+        "lib/MonoTouch10/RestSharp.dll",
+        "lib/MonoTouch10/RestSharp.xml",
+        "lib/net35/RestSharp.dll",
+        "lib/net35/RestSharp.xml",
+        "lib/net4/RestSharp.dll",
+        "lib/net4/RestSharp.xml",
+        "lib/net45/RestSharp.dll",
+        "lib/net45/RestSharp.xml",
+        "lib/net451/RestSharp.dll",
+        "lib/net451/RestSharp.xml",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/net46/RestSharp.dll",
+        "lib/net46/RestSharp.xml",
+        "lib/net4-client/RestSharp.dll",
+        "lib/net4-client/RestSharp.xml",
+        "lib/sl5/RestSharp.dll",
+        "lib/sl5/RestSharp.xml",
+        "lib/windowsphone8/RestSharp.dll",
+        "lib/windowsphone8/RestSharp.xml",
+        "lib/windowsphone81/RestSharp.dll",
+        "lib/windowsphone81/RestSharp.xml",
+        "lib/Xamarin.iOS10/RestSharp.dll",
+        "lib/Xamarin.iOS10/RestSharp.xml",
+        "readme.txt",
+        "RestSharp.105.2.3.nupkg",
+        "RestSharp.105.2.3.nupkg.sha512",
+        "RestSharp.nuspec"
       ]
     },
     "System.Collections/4.0.0": {
@@ -5469,6 +5727,10 @@
     ],
     "DNX,Version=v4.5.1": [
       "Actor1 >= 1.0.0-*",
+      "ContainerActor >= 1.0.0-*",
+      "ContainerActor.Interfaces >= 1.0.0-*",
+      "ImageActor >= 1.0.0-*",
+      "ImageActor.Interfaces >= 1.0.0-*",
       "POC.HostActor.Interfaces >= 1.0.0-*",
       "fx/System.Web >= 4.0.0",
       "fx/System.Web.Services >= 4.0.0"

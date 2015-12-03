@@ -21,6 +21,8 @@
     <ProjectReference Include="..\Actor1\HostActor.csproj" />
     <ProjectReference Include="..\ContainerActor.Interfaces\ContainerActor.Interfaces.csproj" />
     <ProjectReference Include="..\ContainerActor\ContainerActor.csproj" />
+    <ProjectReference Include="..\ImageActor.Interfaces\ImageActor.Interfaces.csproj" />
+    <ProjectReference Include="..\ImageActor\ImageActor.csproj" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>

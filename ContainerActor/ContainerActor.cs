@@ -42,7 +42,7 @@ namespace POC.ContainerActor
             var host = await HostActor.GetHostById(container.HostId);
 
             // Remove container from Docker
-            var restClient = new RestClient(host.URL);
+            var restClient = new RestClient(host.HostUrl);
             var request = new RestRequest(string.Format("/containers/{0}", id));
 
             var response = restClient.ExecuteAsPost(request, "DELETE");
@@ -62,7 +62,7 @@ namespace POC.ContainerActor
 
             foreach (var host in hosts)
             {
-                RestClient client = new RestClient(host.URL);
+                RestClient client = new RestClient(host.HostUrl);
                 RestRequest request = new RestRequest("/containers/json?all=1");
 
                 IRestResponse<List<ContainerListResource>> response = client.Execute<List<ContainerListResource>>(request);
@@ -85,7 +85,7 @@ namespace POC.ContainerActor
 
             Debug.Assert(!string.IsNullOrEmpty(id), "The id specified is null or empty : cannot get details about the container.");
 
-            RestClient client = new RestClient(host.URL);
+            RestClient client = new RestClient(host.HostUrl);
             RestRequest request = new RestRequest("/containers/" + id + "/json");
 
             var response = client.Execute<ContainerListResource>(request);
@@ -101,7 +101,7 @@ namespace POC.ContainerActor
 
             Debug.Assert(!string.IsNullOrEmpty(name), "The name specified is null or empty : cannot get details about the container.");
 
-            RestClient client = new RestClient(host.URL);
+            RestClient client = new RestClient(host.HostUrl);
             RestRequest request = new RestRequest("/containers/" + name + "/json");
 
             var response = client.Execute<ContainerListResource>(request);
@@ -119,7 +119,7 @@ namespace POC.ContainerActor
             var host = await HostActor.GetHostByName(hostName);
             Debug.Assert(host != null, "HostName was invalid, this host hasn't been added yet.");
 
-            RestClient client = new RestClient(host.URL);
+            RestClient client = new RestClient(host.HostUrl);
             RestRequest request = new RestRequest("/containers/json?all=1");
 
             IRestResponse<List<ContainerListResource>> response = client.Execute<List<ContainerListResource>>(request);
@@ -191,7 +191,7 @@ namespace POC.ContainerActor
             container.Image = image;
             container.Repository = repository;
             container.ImageTag = imageTag;
-            container.ComposeGroup = GetContainerComposeGroup(host.URL, containerResource.Id);
+            container.ComposeGroup = GetContainerComposeGroup(host.HostUrl, containerResource.Id);
 
             return container;
         }

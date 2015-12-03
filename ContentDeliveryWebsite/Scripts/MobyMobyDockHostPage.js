@@ -130,7 +130,7 @@ HostsPage.prototype.LoadPage = function () {
 HostsPage.prototype.StartSelectedContainer = function() {
     var containerId = $("#containerList .selected").find("td:eq(5)").text();
     if (containerId != "") {
-        $.post("http://mobydockmgmt1.azurewebsites.net/api/containers/" + containerId + "/start", function (data) {
+        $.post("http://localhost:31003/api/containers/" + containerId + "/start", function (data) {
             if (data == "Successful") {
                 alert("Start container successfully!");
                 $("#containerList .selected").find("td:eq(1)").html('<div class="' + GetClassForState("Running") + '"/>Running');
@@ -150,7 +150,7 @@ HostsPage.prototype.StartSelectedContainer = function() {
 HostsPage.prototype.StopSelectedContainer = function () {
     var containerId = $("#containerList .selected").find("td:eq(5)").text();
     if (containerId != "") {
-        $.post("http://mobydockmgmt1.azurewebsites.net/api/containers/" + containerId + "/stop", function (data) {
+        $.post("http://localhost:31003/api/containers/" + containerId + "/stop", function (data) {
             if (data == "Successful")
             {
                 alert("Stop container successfully!");
@@ -173,7 +173,7 @@ HostsPage.prototype.DeleteSelectedContainer = function () {
     var containerId = $("#containerList .selected").find("td:eq(5)").text();
     if (containerId != "") {
         $.ajax({
-            url: "http://mobydockmgmt1.azurewebsites.net/api/containers/?id=" + containerId,
+            url: "http://localhost:31003/api/containers/?id=" + containerId,
             type: 'DELETE',
             success: function (result) {
                 $("#containerList .selected").remove();
@@ -187,7 +187,7 @@ HostsPage.prototype.ConnectToSelectedContainer = function () {
     var containerName = $("#containerList .selected").find("td:eq(0)").text();
     var hostId = FindField($("#containerList .selected"), "hostId"); 
     if (hostId != "") {
-        $.get("http://mobydockmgmt1.azurewebsites.net/api/hosts/?id=" + hostId, function (data) {
+        $.get("http://localhost:31003/api/hosts/?id=" + hostId, function (data) {
 
             var title = String.format('Container : {0}, Host : {1}', containerName, data.name);
 
@@ -216,7 +216,7 @@ HostsPage.prototype.OnContainerSelected = function () {
 }
 
 
-var serverUrl = "http://mobydockmgmt1.azurewebsites.net";
+var serverUrl = "http://localhost:34002";
 //var serverUrl = "http://localhost:62113/";
 
 function UpdateHosts(onSuccess) {

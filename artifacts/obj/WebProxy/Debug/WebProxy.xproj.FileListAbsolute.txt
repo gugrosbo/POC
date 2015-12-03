@@ -1,1 +1,2 @@
 C:\enlistment\POC\artifacts\obj\WebProxy\Debug\WebProxy.xprojResolveAssemblyReference.cache
+C:\enlistment\POC-GIT\artifacts\obj\WebProxy\Debug\WebProxy.xprojResolveAssemblyReference.cache

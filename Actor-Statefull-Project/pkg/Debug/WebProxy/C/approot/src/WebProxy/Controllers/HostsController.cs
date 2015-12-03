@@ -4,11 +4,14 @@ using POC.HostActor.Interfaces;
 using Microsoft.ServiceFabric.Actors;
 using Microsoft.AspNet.Mvc;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Web.ModelBinding;
+using Microsoft.AspNet.Cors;
 
 namespace Microsoft.OMS.MobyDockMgmt.MobyDockMgmtService
 {
 
-    //[EnableCors(origins: "*", headers: "*", methods: "*")]
+    [EnableCors("AllowAll")]
     [Route("api/[controller]")]
     public class HostsController : Controller
     {
@@ -17,7 +20,7 @@ namespace Microsoft.OMS.MobyDockMgmt.MobyDockMgmtService
         public HostsController()
         {
             ActorId actorId = ActorId.NewId();
-            string applicationName = "fabric:/HostControllerApp1";
+            string applicationName = "fabric:/Actor_Statefull_Project";
             IHostActor hostActor = ActorProxy.Create<IHostActor>(actorId, applicationName);
 
             this.actor = hostActor;
@@ -44,10 +47,11 @@ namespace Microsoft.OMS.MobyDockMgmt.MobyDockMgmtService
 
          // PUT add
          [HttpPut]
-        public async Task<IActionResult> PutHost([FromBody]Host host)
-        {
-            Debug.Assert(host != null, "host object is null or empty");
-            
+        public async Task<IActionResult> PutHost([FromBody]Host host) {
+            //DefaultModelBinder x;
+            //var result = JsonConvert.DeserializeObject<Host>(this.Request.ToString());
+            // Debug.Assert(host != null, "host object is null or empty");
+            var h = new Host() { Name = "test", Port = 2375 };
             await actor.PutHost(host);
             return Ok();
         }

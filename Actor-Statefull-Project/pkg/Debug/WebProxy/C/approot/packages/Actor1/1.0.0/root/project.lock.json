@@ -216,7 +216,7 @@
   "libraries": {
     "Actor1/1.0.0": {
       "type": "package",
-      "sha512": "F71pvbl97ygJcE1LoW1VOT7bXwP7siu0Rp7mckM/yeiWNlw9s6dTqwdgJTfA3C21RP9AoTlRcAx5Xlgd1AQJvg==",
+      "sha512": "2OACbLx+gVV/bH3O1DsCXWPu8rss4xRRzwOBzco8zNszLhHfToiCCPeZ47pu+Z5gNbK88+QQOA4nbkJq+RZj+w==",
       "files": [
         "Actor1.1.0.0.nupkg",
         "Actor1.1.0.0.nupkg.sha512",
@@ -277,7 +277,7 @@
     },
     "POC.HostActor.Interfaces/1.0.0": {
       "type": "package",
-      "sha512": "ACocFc+QUuUdTtek6ENgud4F9PDm8qf9XrFU6sNR44s4TNIZouFUEd8bCaG+cXYaQFFyyPS9OI7YccFlYrFjCA==",
+      "sha512": "1+9Qmq0gOqQ4Q8Tx50d69+mP7cUtT6Kpizk2CDxbVYNYhcdLf3en1pFthMSyFJx1ydv32EwwACKB84e7WMBgLg==",
       "files": [
         "lib/net451/POC.HostActor.Interfaces.dll",
         "POC.HostActor.Interfaces.1.0.0.nupkg",

@@ -15,7 +15,22 @@ namespace ImageActor
     /// </remarks>
     internal class ImageActor : StatelessActor, IImageActor
     {
-        Task<string> IImageActor.DoWorkAsync()
+        public Task<List<Image>> GetAllImages()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Image> GetImageById(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Image>> GetImagesByHost(string hostName)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<string> DoWorkAsync()
         {
             // TODO: Replace the following with your own logic.
             ActorEventSource.Current.ActorMessage(this, "Doing Work");

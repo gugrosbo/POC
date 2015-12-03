@@ -1,0 +1,467 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.5.1": {
+      "Actor1/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ]
+      },
+      "ContainerActor/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Actor1": "1.0.0",
+          "ContainerActor.Interfaces": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0",
+          "RestSharp": "105.2.3"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ]
+      },
+      "ContainerActor.Interfaces/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Actor1": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/ContainerActor.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net451/ContainerActor.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric/4.4.87-preview": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Internal.dll": {},
+          "lib/net45/Microsoft.ServiceFabric.Internal.Strings.dll": {},
+          "lib/net45/System.Fabric.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Internal.dll": {},
+          "lib/net45/Microsoft.ServiceFabric.Internal.Strings.dll": {},
+          "lib/net45/System.Fabric.dll": {}
+        },
+        "resource": {
+          "lib/net45/en-us/Microsoft.ServiceFabric.Internal.Strings.resources.dll": {
+            "locale": "en-us"
+          }
+        }
+      },
+      "Microsoft.ServiceFabric.Actors/1.4.87-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[4.4.87-preview]",
+          "Microsoft.ServiceFabric.Data": "[1.4.87-preview]",
+          "Microsoft.ServiceFabric.Services": "[1.4.87-preview]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Actors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Actors.dll": {},
+          "lib/net45/ServiceFabricServiceModel.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric.Data/1.4.87-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[4.4.87-preview]"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "System.ServiceModel"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Data.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric.Services/1.4.87-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[4.4.87-preview]",
+          "Microsoft.ServiceFabric.Data": "[1.4.87-preview]"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "System.ServiceModel"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Services.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Services.dll": {}
+        }
+      },
+      "POC.HostActor.Interfaces/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/POC.HostActor.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net451/POC.HostActor.Interfaces.dll": {}
+        }
+      },
+      "RestSharp/105.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net451/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net451/RestSharp.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win7-x64": {
+      "Actor1/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ]
+      },
+      "ContainerActor/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Actor1": "1.0.0",
+          "ContainerActor.Interfaces": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0",
+          "RestSharp": "105.2.3"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ]
+      },
+      "ContainerActor.Interfaces/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Actor1": "1.0.0",
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview",
+          "POC.HostActor.Interfaces": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/ContainerActor.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net451/ContainerActor.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric/4.4.87-preview": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Internal.dll": {},
+          "lib/net45/Microsoft.ServiceFabric.Internal.Strings.dll": {},
+          "lib/net45/System.Fabric.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Internal.dll": {},
+          "lib/net45/Microsoft.ServiceFabric.Internal.Strings.dll": {},
+          "lib/net45/System.Fabric.dll": {}
+        },
+        "resource": {
+          "lib/net45/en-us/Microsoft.ServiceFabric.Internal.Strings.resources.dll": {
+            "locale": "en-us"
+          }
+        }
+      },
+      "Microsoft.ServiceFabric.Actors/1.4.87-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[4.4.87-preview]",
+          "Microsoft.ServiceFabric.Data": "[1.4.87-preview]",
+          "Microsoft.ServiceFabric.Services": "[1.4.87-preview]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Actors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Actors.dll": {},
+          "lib/net45/ServiceFabricServiceModel.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric.Data/1.4.87-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[4.4.87-preview]"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "System.ServiceModel"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Data.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric.Services/1.4.87-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[4.4.87-preview]",
+          "Microsoft.ServiceFabric.Data": "[1.4.87-preview]"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "System.ServiceModel"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.ServiceFabric.Services.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ServiceFabric.Services.dll": {}
+        }
+      },
+      "POC.HostActor.Interfaces/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "4.4.87-preview",
+          "Microsoft.ServiceFabric.Actors": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Data": "1.4.87-preview",
+          "Microsoft.ServiceFabric.Services": "1.4.87-preview"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/POC.HostActor.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net451/POC.HostActor.Interfaces.dll": {}
+        }
+      },
+      "RestSharp/105.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net451/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net451/RestSharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Actor1/1.0.0": {
+      "type": "package",
+      "sha512": "2OACbLx+gVV/bH3O1DsCXWPu8rss4xRRzwOBzco8zNszLhHfToiCCPeZ47pu+Z5gNbK88+QQOA4nbkJq+RZj+w==",
+      "files": [
+        "Actor1.1.0.0.nupkg",
+        "Actor1.1.0.0.nupkg.sha512",
+        "Actor1.nuspec",
+        "root/project.json",
+        "root/project.lock.json"
+      ]
+    },
+    "ContainerActor/1.0.0": {
+      "type": "package",
+      "sha512": "Hc2Rc73WEsT8IJCSkMncrlVuqL3sNzzPc1rEQuVemeb4KJteyjwvu6w3r0hG4+kYRFJbDP/UKJW2qz8QvyTCMA==",
+      "files": [
+        "ContainerActor.1.0.0.nupkg",
+        "ContainerActor.1.0.0.nupkg.sha512",
+        "ContainerActor.nuspec",
+        "root/project.json",
+        "root/project.lock.json"
+      ]
+    },
+    "ContainerActor.Interfaces/1.0.0": {
+      "type": "package",
+      "sha512": "WRRrbCdf/ZY9L924ehzeInPrirlMBZibz+sxYQeLf2Be11nJ/n5jKScbNWchm6l1XeWHLJsG8Egb34vGlKKYkw==",
+      "files": [
+        "ContainerActor.Interfaces.1.0.0.nupkg",
+        "ContainerActor.Interfaces.1.0.0.nupkg.sha512",
+        "ContainerActor.Interfaces.nuspec",
+        "lib/net451/ContainerActor.Interfaces.dll",
+        "root/project.json",
+        "root/project.lock.json"
+      ]
+    },
+    "Microsoft.ServiceFabric/4.4.87-preview": {
+      "type": "package",
+      "sha512": "jVvhcsxwTGM7ygxZTeakVfbx3Bwq/44QC0sutjfgwHOYxkbx+CPuajEoaN/QFpo6Tm371YxwecA5wsf2Ek9CjA==",
+      "files": [
+        "lib/net45/en-us/Microsoft.ServiceFabric.Internal.Strings.resources.dll",
+        "lib/net45/Microsoft.ServiceFabric.Internal.dll",
+        "lib/net45/Microsoft.ServiceFabric.Internal.Strings.dll",
+        "lib/net45/System.Fabric.dll",
+        "lib/net45/System.Fabric.xml",
+        "Microsoft.ServiceFabric.4.4.87-preview.nupkg",
+        "Microsoft.ServiceFabric.4.4.87-preview.nupkg.sha512",
+        "Microsoft.ServiceFabric.nuspec"
+      ]
+    },
+    "Microsoft.ServiceFabric.Actors/1.4.87-preview": {
+      "type": "package",
+      "sha512": "OFq8WlWwmVuA0c/UHKaE40L6aUB6nZBbaMlpAycnR7N7uSM3OkudvqxmJrQm/IwFaLUz5/MLhW11UfmjHmyz/g==",
+      "files": [
+        "build/FabActUtil.exe",
+        "build/Microsoft.ServiceFabric.Actors.targets",
+        "lib/net45/Microsoft.ServiceFabric.Actors.dll",
+        "lib/net45/Microsoft.ServiceFabric.Actors.xml",
+        "lib/net45/ServiceFabricServiceModel.dll",
+        "Microsoft.ServiceFabric.Actors.1.4.87-preview.nupkg",
+        "Microsoft.ServiceFabric.Actors.1.4.87-preview.nupkg.sha512",
+        "Microsoft.ServiceFabric.Actors.nuspec"
+      ]
+    },
+    "Microsoft.ServiceFabric.Data/1.4.87-preview": {
+      "type": "package",
+      "sha512": "vMlboK8H0w4s1hIfEaH195p9JmV5j1wPkJ8c/Kqvfd8qXwJQyWcmk6UXVLzomOLf5Xhf2WV31V3gd0c/KPCpJQ==",
+      "files": [
+        "lib/net45/Microsoft.ServiceFabric.Data.dll",
+        "lib/net45/Microsoft.ServiceFabric.Data.xml",
+        "Microsoft.ServiceFabric.Data.1.4.87-preview.nupkg",
+        "Microsoft.ServiceFabric.Data.1.4.87-preview.nupkg.sha512",
+        "Microsoft.ServiceFabric.Data.nuspec"
+      ]
+    },
+    "Microsoft.ServiceFabric.Services/1.4.87-preview": {
+      "type": "package",
+      "sha512": "PILym7v2+WVvr226lelJUhpLywA0nSylQe1GunM+eaIyaRGObMDRBoPTxzTkWKQz6FXIEEPnooKv4I+a7Oo+Fg==",
+      "files": [
+        "lib/net45/Microsoft.ServiceFabric.Services.dll",
+        "lib/net45/Microsoft.ServiceFabric.Services.xml",
+        "Microsoft.ServiceFabric.Services.1.4.87-preview.nupkg",
+        "Microsoft.ServiceFabric.Services.1.4.87-preview.nupkg.sha512",
+        "Microsoft.ServiceFabric.Services.nuspec"
+      ]
+    },
+    "POC.HostActor.Interfaces/1.0.0": {
+      "type": "package",
+      "sha512": "1+9Qmq0gOqQ4Q8Tx50d69+mP7cUtT6Kpizk2CDxbVYNYhcdLf3en1pFthMSyFJx1ydv32EwwACKB84e7WMBgLg==",
+      "files": [
+        "lib/net451/POC.HostActor.Interfaces.dll",
+        "POC.HostActor.Interfaces.1.0.0.nupkg",
+        "POC.HostActor.Interfaces.1.0.0.nupkg.sha512",
+        "POC.HostActor.Interfaces.nuspec",
+        "root/project.json",
+        "root/project.lock.json"
+      ]
+    },
+    "RestSharp/105.2.3": {
+      "type": "package",
+      "sha512": "50LkciOclb7Lza9QXqR9reKeUoPlDQiFD4iBdOmd6twOBmTtqEFIOXQgdDdsTHQg4HcGh6EvrM6gN1X72vkJLA==",
+      "files": [
+        "lib/MonoAndroid10/RestSharp.dll",
+        "lib/MonoAndroid10/RestSharp.xml",
+        "lib/MonoTouch10/RestSharp.dll",
+        "lib/MonoTouch10/RestSharp.xml",
+        "lib/net35/RestSharp.dll",
+        "lib/net35/RestSharp.xml",
+        "lib/net4/RestSharp.dll",
+        "lib/net4/RestSharp.xml",
+        "lib/net45/RestSharp.dll",
+        "lib/net45/RestSharp.xml",
+        "lib/net451/RestSharp.dll",
+        "lib/net451/RestSharp.xml",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/net46/RestSharp.dll",
+        "lib/net46/RestSharp.xml",
+        "lib/net4-client/RestSharp.dll",
+        "lib/net4-client/RestSharp.xml",
+        "lib/sl5/RestSharp.dll",
+        "lib/sl5/RestSharp.xml",
+        "lib/windowsphone8/RestSharp.dll",
+        "lib/windowsphone8/RestSharp.xml",
+        "lib/windowsphone81/RestSharp.dll",
+        "lib/windowsphone81/RestSharp.xml",
+        "lib/Xamarin.iOS10/RestSharp.dll",
+        "lib/Xamarin.iOS10/RestSharp.xml",
+        "readme.txt",
+        "RestSharp.105.2.3.nupkg",
+        "RestSharp.105.2.3.nupkg.sha512",
+        "RestSharp.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "ContainerActor >= 1.0.0"
+    ],
+    ".NETFramework,Version=v4.5.1": [
+      "Microsoft.ServiceFabric >= 4.4.87-preview",
+      "Microsoft.ServiceFabric.Actors >= 1.4.87-preview",
+      "Microsoft.ServiceFabric.Data >= 1.4.87-preview",
+      "Microsoft.ServiceFabric.Services >= 1.4.87-preview",
+      "RestSharp >= 105.2.3",
+      "POC.HostActor.Interfaces >= 1.0.0-*",
+      "Actor1 >= 1.0.0-*",
+      "ContainerActor.Interfaces >= 1.0.0-*"
+    ]
+  }
+}
